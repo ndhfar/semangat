@@ -6,7 +6,9 @@ import Wendy from "../../../public/wendy.png";
 import Yeri from "../../../public/yeri.png";
 
 export default async function Motivation() {
-  const res = await fetch("https://v1.appbackend.io/v1/rows/pGNQxiqsPLby");
+  const res = await fetch("https://v1.appbackend.io/v1/rows/pGNQxiqsPLby", {
+    cache: "no-store",
+  });
   const { data } = await res.json();
 
   const random = Math.floor(Math.random() * data.length);
