@@ -26,7 +26,7 @@ export default async function Motivation() {
         label="Seulgi"
         additional="-right-5 top-0 -rotate-[135deg]"
       />
-      <Link href="/">
+      <Link href="/" className="cursor-pointer">
         <Redvelvet
           member={Wendy}
           label="Wendy"
