@@ -12,7 +12,7 @@ export default async function Motivation() {
   });
   const { data } = await res.json();
 
-  const random = Math.floor(Math.random() * data.length);
+  const random = Math.floor(Math.random() * 95);
 
   return (
     <div className="min-h-screen motivation-page w-screen overflow-hidden relative flex justify-center items-center text-xl">
